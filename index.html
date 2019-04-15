@@ -39,6 +39,42 @@
                         "feature": "Zoning"
                     }
                 },
+            "transform": [
+                {
+                    'lookup': 'prpperties.zoning_description',
+                    'from': {
+                        'fields': [base_type],
+                        'data':
+                        {
+                            'values': [
+                                {'code': 'CB1', 'base_type': 'Commercial'},
+                                {'code': 'CB2', 'base_type': 'Commercial'},
+                                {'code': 'CB3', 'base_type': 'Commercial'},
+                                {'code': 'CG', 'base_type': 'Commercial'},
+                                {'code': 'CI', 'base_type': 'Commercial'},
+                                {'code': 'CN', 'base_type': 'Commercial'},
+                                {'code': 'CO', 'base_type': 'Commercial'},
+                                {'code': 'I1', 'base_type': 'Industrial'},
+                                {'code': 'I2', 'base_type': 'Industrial'},
+                                {'code': 'IBP', 'base_type': 'Commercial'},
+                                {'code': 'IOP', 'base_type': 'Commercial'},
+                                {'code': 'IT-MF', 'base_type': 'Residential'},
+                                {'code': 'IT-MX', 'base_type': 'Residential'},
+                                {'code': 'IT-NC', 'base_type': 'Residential'},
+                                {'code': 'IT-SF1', 'base_type': 'Residential'},
+                                {'code': 'IT-SF2', 'base_type': 'Residential'},
+                                {'code': 'MF1', 'base_type': 'Residential'},
+                                {'code': 'MF2', 'base_type': 'Residential'},
+                                {'code': 'MF3', 'base_type': 'Residential'},
+                                {'code': 'MFUniv', 'base_type': 'Residential'},
+                                {'code': 'MMP', 'base_type': 'Residential'},
+                                {'code': 'SF1', 'base_type': 'Residential'},
+                                {'code': 'SF2', 'base_type': 'Residential'}
+                            ]
+                        },
+                        'key': 'code'
+                    }
+
                 "mark": "geoshape",
                 "projection": {
                     "type": "albersUsa"
@@ -53,3 +89,5 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
 </body>
 </html>
+
+
